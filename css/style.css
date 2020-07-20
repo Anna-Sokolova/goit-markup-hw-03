@@ -1,0 +1,256 @@
+:root {
+	--basic-text-color: #757575;
+	--white-text-color: #ffffff;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--black-accent-logo-color: #000000;
+	--footer-contacts-color: rgba(255, 255, 255, 0.6);
+	--basic-background-color: #ffffff;
+	--accent-background-color: #f5f4fa;
+	--footer-background-color: #2f303a;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+
+	background-color: var(--basic-background-color);
+}
+
+/* Логотип */
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+
+	text-decoration: none;
+
+	color: var(--black-accent-logo-color);
+}
+
+.logo span {
+	color: var(--accent-color);
+}
+
+footer .logo {
+	color: var(--white-text-color);
+}
+
+/* Навигация */
+.nav,
+.contacts {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.list {
+	list-style: none;
+}
+
+.contacts-link,
+.nav-link,
+.social-link,
+.team-link,
+.button {
+	text-decoration: none;
+}
+
+.nav-link {
+	color: var(--title-text-color);
+}
+
+.nav-link.current {
+	color: var(--accent-color);
+}
+
+.contacts-link,
+.team-link {
+	color: var(--basic-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.team-link:hover,
+.team-link:focus,
+.clients-link:hover,
+.social-link:hover,
+.social-link:focus {
+	color: var(--accent-color);
+}
+
+/* Герой */
+.hero,
+.footer {
+	background: var(--footer-background-color);
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: var(--white-text-color);
+}
+
+.button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: var(--white-text-color);
+	background: var(--accent-color);
+}
+
+/* Преимущества */
+.advantages-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--title-text-color);
+}
+
+.advantages-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	color: var(--basic-text-color);
+}
+
+/*  Деятельность */
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+
+	color: var(--title-text-color);
+}
+
+.work-item {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: var(--white-text-color);
+	background: var(--footer-background-color);
+}
+
+/* Наша команда */
+.team-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+
+	text-align: center;
+
+	color: var(--title-text-color);
+}
+
+.team-specialty {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+
+	text-align: center;
+
+	color: var(--basic-text-color);
+}
+
+/* Страница Портфолио */
+.filter-button {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+
+	text-align: center;
+
+	color: var(--title-text-colo);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: var(--white-text-color);
+	background: var(--accent-color);
+}
+/* Галлерея Портфолио */
+
+.project-card {
+	text-decoration: none;
+}
+.project-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+
+	color: var(--title-text-color);
+}
+
+.project-feature {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.87;
+
+	color: var(--basic-text-color);
+}
+
+.project-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+
+	color: var(--title-text-color);
+}
+
+/* Футер */
+
+.address {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	color: var(--white-text-color);
+}
+
+.address-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	text-decoration: none;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.social {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.43;
+	text-transform: uppercase;
+
+	color: var(--white-text-color);
+}
+
+.social-link {
+	color: var(--white-text-color);
+}
