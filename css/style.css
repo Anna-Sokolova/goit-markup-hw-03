@@ -34,6 +34,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /* Логотип */
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -153,6 +154,11 @@ section {
 	outline: 2px solid tomato;
 }
 
+section.advantages {
+	padding-top: 94px;
+	padding-bottom: 0;
+}
+
 .advantages-title {
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -203,14 +209,19 @@ section {
 /* Наша команда */
 
 .section.team {
-	/* margin-top: 94px;
-	margin-bottom: 94px; */
-
 	background-color: var(--accent-background-color);
 }
 
+div.box-team {
+	outline: 2px solid tomato;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	padding: 0 32px;
+}
+
 .team-name {
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 
 	font-weight: 500;
@@ -257,7 +268,16 @@ section {
 .project-card {
 	text-decoration: none;
 }
+
+div.project-caption {
+	outline: 2px solid tomato;
+	padding: 20px 24px;
+}
+
 .project-title {
+	margin-top: 0;
+	margin-bottom: 4px;
+
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -267,6 +287,8 @@ section {
 }
 
 .project-feature {
+	margin: 0;
+
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.87;
@@ -275,6 +297,8 @@ section {
 }
 
 .project-text {
+	margin: 0;
+
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.56;
@@ -287,6 +311,16 @@ section {
 .footer {
 	background: var(--footer-background-color);
 	outline: 2px solid tomato;
+}
+
+div.footer-box {
+	outline: 2px solid tomato;
+	width: 270px;
+}
+
+div.box.subscription {
+	outline: 2px solid tomato;
+	width: 570px;
 }
 
 .address {
