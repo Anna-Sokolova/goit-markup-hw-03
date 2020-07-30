@@ -28,15 +28,31 @@ body {
 }
 
 .container {
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 	width: 1200px;
 	padding: 0 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	/* outline: 2px solid tomato; */
+}
+
+p {
+	margin: 0;
+}
+
 /* Логотип */
+nav > a.logo {
+	/* outline: 2px solid tomato; */
+}
+
 .logo {
+	margin-right: 85px;
+
 	font-family: "Raleway", sans-serif;
 	font-size: 26px;
 	line-height: 1.19;
@@ -55,6 +71,18 @@ footer .logo {
 }
 
 /* Навигация */
+.container.main-nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
 .nav,
 .contacts {
 	font-weight: 500;
@@ -62,11 +90,36 @@ footer .logo {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-
 .list {
+	list-style: none;
 	padding: 0;
 	margin: 0;
-	list-style: none;
+}
+
+.nav.list {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.nav.list .item {
+	/* outline: 2px solid tomato; */
+}
+
+.nav.list .item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.contacts.list {
+	display: flex;
+}
+
+.contacts.list .item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.contacts.list .item {
+	/* outline: 2px solid tomato; */
 }
 
 .contacts-link,
@@ -106,7 +159,7 @@ footer .logo {
 .hero {
 	text-align: center;
 	background: var(--footer-background-color);
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 }
 section.hero {
 	padding: 200px 0;
@@ -144,14 +197,16 @@ section.hero {
 }
 
 /* Преимущества */
-.section-title.advantages {
-	display: none;
-}
-
-section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	outline: 2px solid tomato;
+.section-title.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 section.advantages {
@@ -159,9 +214,28 @@ section.advantages {
 	padding-bottom: 0;
 }
 
+.list.advantages {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+.advantages-item {
+	width: calc((100% - 90px) / 4);
+	margin-right: 30px;
+}
+
+.advantages-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+/* .advantages-item:not(:last-child) {
+	margin-right: 30px;
+} */
+
 .advantages-title {
 	margin-top: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -172,7 +246,8 @@ section.advantages {
 }
 
 .advantages-text {
-	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
 	padding: 0;
 
 	font-weight: 400;
@@ -195,7 +270,25 @@ section.advantages {
 	color: var(--title-text-color);
 }
 
+.list.work {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .work-item {
+	width: calc((100% - 60px) / 3);
+	margin-right: 30px;
+}
+
+.work-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+/* .work-item:not(:last-child) {
+	margin-right: 30px;
+} */
+
+.work-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -212,12 +305,31 @@ section.advantages {
 	background-color: var(--accent-background-color);
 }
 
+.list.team {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-item {
+	width: calc((100% - 90px) / 4);
+	margin-right: 30px;
+}
+
+.team-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+/* .team-item:not(:last-child) {
+	margin-right: 30px;
+} */
+
 div.box-team {
-	outline: 2px solid tomato;
-	display: inline-block;
+	/* outline: 2px solid tomato; */
+	display: block;
 	padding-top: 30px;
 	padding-bottom: 24px;
-	padding: 0 32px;
+	padding-right: 32px;
+	padding-left: 32px;
 }
 
 .team-name {
@@ -246,8 +358,52 @@ div.box-team {
 	color: var(--basic-text-color);
 }
 
+.list.social {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Постоянные клиенты */
+
+.list.clients {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.clients-item {
+	width: calc((100% - 150px) / 6);
+	margin-right: 30px;
+}
+
+.clients-item:nth-child(6n) {
+	margin-right: 0;
+}
+
+/* .clients-item:not(:last-child) {
+	margin-right: 30px;
+} */
+
 /* Страница Портфолио */
+.list.button-galary {
+	display: flex;
+	justify-content: center;
+}
+
+.button-item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.filter-container {
+	padding-bottom: 34px;
+	/* outline: 2px solid tomato; */
+}
+
 .filter-button {
+	display: block;
+	padding: 6px 22px;
+	border-radius: 4px;
+	border: solid transparent;
+
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -265,12 +421,44 @@ div.box-team {
 }
 /* Галлерея Портфолио */
 
+.list.galary {
+	/* outline: 2px solid tomato; */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item-galary {
+	/* outline: 2px solid tomato; */
+	/* width: 370px;
+	margin-right: 30px;
+	margin-bottom: 30px; */
+	width: calc((100% - 60px) / 3);
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.item-galary:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.item-galary:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+
+/* .item-galary:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.item-galary:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+} */
+
 .project-card {
 	text-decoration: none;
 }
 
 div.project-caption {
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 	padding: 20px 24px;
 }
 
@@ -297,6 +485,7 @@ div.project-caption {
 }
 
 .project-text {
+	display: none;
 	margin: 0;
 
 	font-weight: 400;
@@ -310,19 +499,40 @@ div.project-caption {
 
 .footer {
 	background: var(--footer-background-color);
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
+}
+
+.main-footer {
+	display: flex;
+	align-items: baseline;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.list.address {
+	margin-top: 20px;
+}
+
+.item-address:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 div.footer-box {
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 	width: 270px;
+	margin-right: 30px;
 }
 
-div.box.subscription {
-	outline: 2px solid tomato;
+div.subscription-box {
+	/* outline: 2px solid tomato; */
 	width: 570px;
 }
 
+.content-box {
+	display: flex;
+	justify-content: space-between;
+}
 .address {
 	font-style: normal;
 	font-weight: 400;
@@ -333,6 +543,10 @@ div.box.subscription {
 }
 
 .address-link {
+	margin-top: 9px;
+	margin-bottom: 0;
+
+	display: inline-block;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -343,7 +557,17 @@ div.box.subscription {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.social.title {
+	margin-bottom: 20px;
+}
+
+.list.social {
+	margin-top: 20px;
+}
+
 .social {
+	margin: 0;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.43;
