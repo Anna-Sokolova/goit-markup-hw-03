@@ -45,9 +45,8 @@ p {
 	margin: 0;
 }
 
-/* Логотип */
-nav > a.logo {
-	/* outline: 2px solid tomato; */
+img {
+	display: block;
 }
 
 .logo {
@@ -289,6 +288,10 @@ section.advantages {
 } */
 
 .work-title {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	margin: 0;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -313,6 +316,10 @@ section.advantages {
 .team-item {
 	width: calc((100% - 90px) / 4);
 	margin-right: 30px;
+
+	background: var(--basic-background-color);
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-item:nth-child(4n) {
@@ -363,6 +370,15 @@ div.box-team {
 	justify-content: space-around;
 }
 
+/* Временный фон для карточек соц сетей */
+.list.social {
+	background-color: violet;
+}
+
+.item-social:not(:last-child) {
+	margin-right: 10px;
+}
+
 /* Постоянные клиенты */
 
 .list.clients {
@@ -394,7 +410,7 @@ div.box-team {
 }
 
 .filter-container {
-	padding-bottom: 34px;
+	margin-bottom: 34px;
 	/* outline: 2px solid tomato; */
 }
 
@@ -435,6 +451,8 @@ div.box-team {
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
+
+	border: 1px solid #eeeeee;
 }
 
 .item-galary:nth-child(3n) {
@@ -561,10 +579,6 @@ div.subscription-box {
 	margin-bottom: 20px;
 }
 
-.list.social {
-	margin-top: 20px;
-}
-
 .social {
 	margin: 0;
 
@@ -578,4 +592,13 @@ div.subscription-box {
 
 .social-link {
 	color: var(--white-text-color);
+}
+
+.list.social.footer {
+	width: 206px;
+	margin-right: auto;
+}
+
+.item-social.footer {
+	background-color: violet;
 }
