@@ -372,7 +372,7 @@ div.box-team {
 
 /* Временный фон для карточек соц сетей */
 .list.social {
-	background-color: violet;
+	background-color: var(--footer-background-color);
 }
 
 .item-social:not(:last-child) {
