@@ -451,8 +451,6 @@ div.box-team {
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
-
-	border: 1px solid #eeeeee;
 }
 
 .item-galary:nth-child(3n) {
@@ -478,6 +476,7 @@ div.box-team {
 div.project-caption {
 	/* outline: 2px solid tomato; */
 	padding: 20px 24px;
+	border: 1px solid #eeeeee;
 }
 
 .project-title {
